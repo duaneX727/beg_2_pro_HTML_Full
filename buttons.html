@@ -6,7 +6,7 @@
 
 <style>
   body {
-    font-family: Arial;
+    font-family: systm-ui,;
   }
   .subscribe-button {
     background-color: #cc0000;
@@ -18,16 +18,35 @@
     border-radius: 2px;
     cursor: pointer;
     margin-right: 10px;
+    transition: opacity 0.15s;
+  }
+  .subscribe-button:hover {
+    opacity: 0.8;
+  }
+  .subscribe-button:active {
+    opacity: 0.4;
   }
   .join-button {
     background-color: white;
     height: 36px;
-    width: 70px;
-    border-color:  #065fd4;;
-    border-width: 2px;
-    color:#065fd4;
+    width: 60px;
+    border-color: #065fd4;
+    border-width: 1px;
+    color: #065fd4;
+    border-radius: 2px;
     cursor: pointer;
     margin-right: 10px;
+    font-family: Arial;
+    font-weight: 600;
+    transition: background-color 0.15s, color 1s;
+  }
+  .join-button:hover {
+    background-color: #065fd4;
+    color: white;
+    opacity: 0.8;
+  }
+  .join-button:active {
+    opacity: 0.6;
   }
   .tweet-button {
     height: 36px;
@@ -36,8 +55,13 @@
     background-color: #1d9bf0;
     border: none;
     color: white;
-    border-radius: 30px;
+    border-radius: 35px;
     font-weight: bold;
     cursor: pointer;
+    transition: box-shadow 0.15s;
+  }
+  .tweet-button:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
   }
 </style>
